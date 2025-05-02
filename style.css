@@ -1,0 +1,140 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f0ff;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improves readability */
+    color: #2c3e50; /* Darker text color for better contrast */
+  }
+  
+  /* Container for the content */
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15); /* Softer shadow for a modern feel */
+    text-align: center;
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    border: 1px solid #e1e1e1; /* Light border around the container */
+  }
+  
+  /* Profile Image Styling */
+  .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #8e44ad; /* Thicker border for emphasis */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
+  /* Main Heading */
+  h1 {
+    margin: 10px 0;
+    color: #8e44ad;
+    font-size: 2.5em; /* Larger title */
+    font-weight: 600; /* Slightly bolder font */
+    text-transform: uppercase; /* Make heading more impactful */
+  }
+  
+  /* Subheading */
+  h2 {
+    color: #34495e;
+    margin-top: 30px;
+    font-size: 1.8em;
+    font-weight: 600;
+    letter-spacing: 1px; /* Adds space between characters for a clean look */
+  }
+  
+  /* Styling for Unordered List */
+  ul {
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 20px;
+    color: #34495e;
+    font-size: 1.1em;
+    line-height: 1.8;
+  }
+  
+  /* Styling for List Items */
+  ul li {
+    margin-bottom: 10px; /* Adds space between items */
+  }
+  
+  /* Link Styling */
+  a {
+    color: #8e44ad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #5e3370; /* Darker shade of purple on hover */
+  }
+  
+  /* Button Styling for Resume Download */
+  .resume-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 12px 25px; /* Slightly larger padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allows button styling */
+    border-radius: 8px; /* More rounded corners */
+    margin-top: 20px;
+    font-size: 1.2em; /* Larger font size for the button */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-3px); /* Small lift effect on hover */
+  }
+  
+  .resume-button:active {
+    transform: translateY(0); /* Button returns to original position */
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      margin: 20px auto;
+      padding: 25px;
+    }
+    
+    h1 {
+      font-size: 2.2em;
+    }
+    
+    h2 {
+      font-size: 1.5em;
+    }
+  
+    .profile-img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .resume-button {
+      width: 100%; /* Full width button on smaller screens */
+      padding: 12px 0;
+      font-size: 1.1em;
+    }
+    
+    ul {
+      padding-left: 20px;
+      font-size: 1em;
+    }
+  }
+  
